@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/web-nhac-spotify/static/css/main.ffe34ec7.css",
+    "main.js": "/web-nhac-spotify/static/js/main.2e111331.js",
+    "index.html": "/web-nhac-spotify/index.html",
+    "main.ffe34ec7.css.map": "/web-nhac-spotify/static/css/main.ffe34ec7.css.map",
+    "main.2e111331.js.map": "/web-nhac-spotify/static/js/main.2e111331.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffe34ec7.css",
+    "static/js/main.2e111331.js"
+  ]
+}
