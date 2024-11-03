@@ -8,10 +8,10 @@ export default function App() {
   const [{ token }, dispatch] = useStateProvider();
 
   useEffect(() => {
-    // Lấy token từ localStorage
+    // Lấy token từ localStorage nếu có
     let token = localStorage.getItem("token");
 
-    // Nếu token không tồn tại trong localStorage, kiểm tra URL
+    // Nếu không tìm thấy token trong localStorage, kiểm tra URL
     if (!token) {
       const hash = window.location.hash;
       if (hash) {
@@ -24,6 +24,8 @@ export default function App() {
     // Nếu tìm thấy token, cập nhật state với token đó
     if (token) {
       dispatch({ type: reducerCases.SET_TOKEN, token });
+    } else {
+      console.error("Token không tồn tại. Vui lòng kiểm tra URL hoặc quá trình xác thực.");
     }
   }, [dispatch]);
 
